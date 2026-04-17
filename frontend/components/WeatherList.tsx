@@ -45,8 +45,8 @@ export const WeatherList: React.FC<WeatherListProps> = ({ title, data, unit, typ
       {/* List Content */}
       <div className="flex flex-col">
         {isLoading ? (
-          // Render 5 skeletons
-          Array.from({ length: 5 }).map((_, i) => <SkeletonRow key={`skeleton-${i}`} />)
+          // Render 10 skeletons
+          Array.from({ length: 10 }).map((_, i) => <SkeletonRow key={`skeleton-${i}`} />)
         ) : (
           data.map((city) => (
             <WeatherRow 
