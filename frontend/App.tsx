@@ -83,9 +83,8 @@ const App: React.FC = () => {
         </div>
       </main>
 
-      <footer className="mt-24 pb-8 flex flex-col items-center gap-2 text-center font-mono text-[10px] text-text-muted tracking-widest uppercase">
+      <footer className="mt-24 pb-8 text-center font-mono text-[10px] text-text-muted tracking-widest uppercase">
         <p>{t(language, 'footer')} {new Date().getFullYear()}</p>
-        <p className="opacity-40 hover:opacity-100 transition-opacity cursor-default">Vibe Coding Powered by Gemini</p>
       </footer>
     </div>
   );
